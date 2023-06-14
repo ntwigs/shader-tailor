@@ -1,5 +1,8 @@
 {
   "name": "shader-tailor",
+  "description": "💅 Your personal shader stylist 💅",
+  "author": "Oscar Nordquist <ntwigs>",
+  "homepage": "https://github.com/ntwigs/shader-tailor",
   "version": "1.0.0",
   "source": "src/index.ts",
   "main": "dist/index.js",
