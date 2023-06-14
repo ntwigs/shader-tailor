@@ -10,17 +10,18 @@ type Config = {
 } & Options
 
 type ShaderTailorBuilder = {
-  token: (token: string) => ShaderTailorBuilder;
-  replace: (content: string) => ShaderTailorBuilder;
-  insertBefore: (content: string) => ShaderTailorBuilder;
-  insertAfter: (content: string) => ShaderTailorBuilder;
-  exec: () => string;
+  token: (token: string) => ShaderTailorBuilder
+  replace: (content: string) => ShaderTailorBuilder
+  insertBefore: (content: string) => ShaderTailorBuilder
+  insertAfter: (content: string) => ShaderTailorBuilder
+  exec: () => string
 }
 
 /**
  * A builder to tailor shaders.
  */
-export const shaderTailor = (shader: string): ShaderTailorBuilder => shaderTailorBuilder({ shader })
+export const shaderTailor = (shader: string): ShaderTailorBuilder =>
+  shaderTailorBuilder({ shader })
 
 const shaderTailorBuilder = (config: Config) => ({
   /**

@@ -7,12 +7,17 @@
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
-  "files": ["dist/**/*", "package.json"],
+  "files": [
+    "dist/**/*",
+    "package.json"
+  ],
+  "prettier": "@goatee/prettier",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build"
   },
   "devDependencies": {
+    "@goatee/prettier": "^0.0.4",
     "@parcel/packager-ts": "2.9.2",
     "@parcel/transformer-typescript-types": "2.9.2",
     "parcel": "^2.9.2",

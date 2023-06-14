@@ -23,6 +23,11 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
+"@goatee/prettier@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@goatee/prettier/-/prettier-0.0.4.tgz#7f9ded84f4f0206bbcded7d4c44f90a04eb0548d"
+  integrity sha512-wGr8W9LkPDxsIP25hU5/CJjVV31brSwM1wgiVNMJU8/WCHey6ha9zVqAIp3CEetAaqq5O3FY1b1snzSguzTIFg==
+
 "@lezer/common@^0.15.0", "@lezer/common@^0.15.7":
   version "0.15.12"
   resolved "https://registry.yarnpkg.com/@lezer/common/-/common-0.15.12.tgz#2f21aec551dd5fd7d24eb069f90f54d5bc6ee5e9"
