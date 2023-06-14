@@ -1,0 +1,17 @@
+{
+  "name": "shader-tailor",
+  "version": "1.0.0",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/packager-ts": "2.9.2",
+    "@parcel/transformer-typescript-types": "2.9.2",
+    "parcel": "^2.9.2",
+    "typescript": ">=3.0.0"
+  }
+}
