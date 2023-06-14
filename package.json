@@ -3,10 +3,11 @@
   "description": "💅 Your personal shader stylist 💅",
   "author": "Oscar Nordquist <ntwigs>",
   "homepage": "https://github.com/ntwigs/shader-tailor",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
+  "files": ["dist/**/*", "package.json"],
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build"
