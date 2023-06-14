@@ -74,11 +74,10 @@ const tailoredShader = shaderTailor(myShader)
 Using ShaderTailor with Three.js materials' `onBeforeCompile` function:
 
 ```
-import { MeshBasicMaterial } from 'three';
+import * as THREE from 'three';
 import { shaderTailor } from 'shader-tailor';
 
-const material = new MeshBasicMaterial();
-
+const material = new THREE.MeshBasicMaterial();
 
 material.onBeforeCompile = (shader) => {
   shader.fragmentShader = shaderTailor(shader.fragmentShader)
@@ -86,6 +85,20 @@ material.onBeforeCompile = (shader) => {
     .replace('gl_FragColor = vec4(0.5, 0.5, 0.5, 1.0);')
     .exec();
 }
+```
+
+Using ShaderTailor with [react-three-fiber](https://github.com/pmndrs/react-three-fiber) materials' `onBeforeCompile` function:
+
+```
+import * as THREE from 'three';
+import { shaderTailor } from 'shader-tailor';
+
+<meshBasicMaterial onBeforeCompile={shader => {
+  shader.fragmentShader = shaderTailor(shader.fragmentShader)
+    .token('gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);')
+    .replace('gl_FragColor = vec4(0.5, 0.5, 0.5, 1.0);')
+    .exec();
+}} />
 ```
 
 ## 📖 License
