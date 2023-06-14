@@ -22,7 +22,7 @@ Or, if you prefer npm, you can use:
 
 And import it into your project:
 
-`import { shaderTailor } from 'shader-tailor';`
+`import { shaderTailor } from 'shader-tailor'`
 
 ## 🛠️ How to Use
 
@@ -35,7 +35,7 @@ const tailoredShader = shaderTailor(myShader)
   .replace('...')
   .insertBefore('...')
   .insertAfter('...')
-  .exec();
+  .exec()
 ```
 
 Here's the step-by-step guide on how to thread your masterpiece:
@@ -65,7 +65,7 @@ const myShader = 'void main() { gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0); }'
 const tailoredShader = shaderTailor(myShader)
   .token('gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);')
   .replace('gl_FragColor = vec4(0.5, 0.5, 0.5, 1.0);')
-  .exec();
+  .exec()
 
 // tailoredShader now contains: 'void main() { gl_FragColor = vec4(0.5, 0.5, 0.5, 1.0); }'
 
@@ -74,30 +74,30 @@ const tailoredShader = shaderTailor(myShader)
 Using ShaderTailor with Three.js materials' `onBeforeCompile` function:
 
 ```
-import * as THREE from 'three';
-import { shaderTailor } from 'shader-tailor';
+import * as THREE from 'three'
+import { shaderTailor } from 'shader-tailor'
 
-const material = new THREE.MeshBasicMaterial();
+const material = new THREE.MeshBasicMaterial()
 
 material.onBeforeCompile = (shader) => {
   shader.fragmentShader = shaderTailor(shader.fragmentShader)
     .token('gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);')
     .replace('gl_FragColor = vec4(0.5, 0.5, 0.5, 1.0);')
-    .exec();
+    .exec()
 }
 ```
 
 Using ShaderTailor with [react-three-fiber](https://github.com/pmndrs/react-three-fiber) materials' `onBeforeCompile` function:
 
 ```
-import * as THREE from 'three';
-import { shaderTailor } from 'shader-tailor';
+import * as THREE from 'three'
+import { shaderTailor } from 'shader-tailor'
 
 <meshBasicMaterial onBeforeCompile={shader => {
   shader.fragmentShader = shaderTailor(shader.fragmentShader)
     .token('gl_FragColor = vec4(1.0, 1.0, 1.0, 1.0);')
     .replace('gl_FragColor = vec4(0.5, 0.5, 0.5, 1.0);')
-    .exec();
+    .exec()
 }} />
 ```
 
@@ -107,4 +107,4 @@ This project is licensed under the terms of the MIT license.
 
 ## 🙋‍♂️ Got Questions?
 
-Feel free to open an issue or submit a pull request. We appreciate your contributions!
+Feel free to open an issue or submit a pull request. I appreciate your contributions! 🥰

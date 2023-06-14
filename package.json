@@ -3,7 +3,7 @@
   "description": "💅 Your personal shader stylist 💅",
   "author": "Oscar Nordquist <ntwigs>",
   "homepage": "https://github.com/ntwigs/shader-tailor",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "types": "dist/types.d.ts",
