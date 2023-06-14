@@ -88,13 +88,6 @@ material.onBeforeCompile = (shader) => {
 }
 ```
 
-## 🎓 Learning Resources
-
-To make the most out of ShaderTailor, you need to be familiar with GLSL (OpenGL Shading Language). If you're new to shaders, here are some resources to get you started:
-
-- [The Book of Shaders](https://thebookofshaders.com/)
-- [Shaderific](http://www.shaderific.com/glsl-tutorials/)
-
 ## 📖 License
 
 This project is licensed under the terms of the MIT license.
