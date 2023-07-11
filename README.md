@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt='shader-tailor-logo' src='https://github-production-user-asset-6210df.s3.amazonaws.com/14088342/245753040-bd0fc164-1d2b-4410-a984-4adad3e54fb5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230614%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230614T095956Z&X-Amz-Expires=300&X-Amz-Signature=638b65c95504c209ffd8652074ca19de97de953602286a1fb441fb55aed2b125&X-Amz-SignedHeaders=host&actor_id=14088342&key_id=0&repo_id=651415685' width='250'/>
+  <img alt='shader-tailor-logo' src='https://github-production-user-asset-6210df.s3.amazonaws.com/14088342/252769680-8fa827dd-e59c-41ea-84d0-f04f203f952d.png' width='250'/>
   <h1 align="center">SHADER TAILOR</h1>
   <h2 align="center">💅 Your personal shader stylist 💅</h2>
 </div>
