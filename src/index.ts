@@ -27,11 +27,16 @@ const shaderTailorBuilder = (config: Config) => ({
   /**
    * Sets the token string to look for in the shader code. This must be called before exec.
    */
-  token: (token: string) =>
-    shaderTailorBuilder({
+  token: (token: string) => {
+    if (!token) {
+      console.error('⚠️ No token provided')
+    }
+
+    return shaderTailorBuilder({
       ...config,
       token,
-    }),
+    })
+  },
 
   /**
    * Sets the string that will replace the token in the shader code. This is optional and can be called before exec.
@@ -64,6 +69,10 @@ const shaderTailorBuilder = (config: Config) => ({
    * Executes the shader modification based on the provided configurations. This must be called last in the chain to get the modified shader code.
    */
   exec: () => {
+    if (!config.insertBefore && !config.replace && !config.insertAfter) {
+      console.error('⚠️ No actions taken')
+    }
+
     const replacement = `
       ${config.insertBefore || ''}
       ${config.replace || config.token || ''}
