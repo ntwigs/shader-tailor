@@ -21,7 +21,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm i
-    - run: npm test
-    - run: npm run build --no-source-maps
+        cache: 'yarn'
+    - run: yarn ci
+    - run: yarn test
+    - run: yarn build --no-source-maps
